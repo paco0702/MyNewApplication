@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentClass.ExchangeFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/exchange_fragment_group_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="463dp"
+        android:text="Reset" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="241dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_add" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="330dp"
+        android:src="@drawable/ic_add" />
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Exchange_fragment" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="151dp"
+        android:layout_height="112dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="330dp"
+        android:src="@drawable/ic_add" />
+
+    <TextView
+        android:id="@+id/textView1_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="75dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView2_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="75dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="200dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView4_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="200dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="330dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView6_showInform"
+        android:layout_width="155dp"
+        android:layout_height="117dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="247dp"
+        android:layout_marginTop="330dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/exchange_group_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="467dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>

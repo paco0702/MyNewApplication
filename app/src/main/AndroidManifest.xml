@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mynewapplication">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyNewApplication">
+        <activity
+            android:name=".ViewExchangeRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowItems.showItemDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShowItems.ShowItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FullList.ItemsPoolActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SerachExchange.GroupDetailSearchExchangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.Information_category_registor"
+            android:exported="false" />
+        <activity
+            android:name=".InformationBaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddWishListActivity"
+            android:exported="false" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".ShowItems.showItemDetailduActivity"
+            android:label="@string/title_activity_show_item_detail"></activity>
+        <activity
+            android:name=".ShowItems.ShowItemduActivity"
+            android:label="@string/title_activity_show_item"></activity>
+        <activity
+            android:name=".ListItemActivity"
+            android:label="@string/title_activity_list_item"
+            android:theme="@style/Theme.MyNewApplication.NoActionBar" />
+        <activity
+            android:name=".register.Register"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.MyNewApplication.NoActionBar" />
+        <activity android:name=".register.Information_register" />
+        <activity android:name=".LoginInActivity" />
+        <activity android:name=".UploadActivity" />
+        <activity android:name=".ChatMainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IndexActivity"
+            android:theme="@style/Theme.MyNewApplication.NoActionBar" />
+    </application>
+
+</manifest>

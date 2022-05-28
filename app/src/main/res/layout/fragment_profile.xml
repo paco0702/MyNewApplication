@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentClass.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:id="@+id/profileInformationLayout"
+            android:layout_width="346dp"
+            android:layout_height="238dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="29dp"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/nameOfProfile"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="33dp"
+                android:text="@string/fragment_home_user_name" />
+
+            <TextView
+                android:id="@+id/RatingOfProfile"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="63dp"
+                android:text="@string/fragment_home_user_name" />
+
+            <TextView
+                android:id="@+id/emailOfProfile"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="169dp"
+                android:layout_marginTop="94dp"
+                android:text="@string/fragment_home_user_name" />
+
+            <TextView
+                android:id="@+id/phoneNumOfProfile"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="169dp"
+                android:layout_marginTop="126dp"
+                android:text="@string/fragment_home_user_name" />
+
+            <Button
+                android:id="@+id/edit_profile"
+                android:layout_width="118dp"
+                android:layout_height="32dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="199dp"
+                android:layout_marginEnd="14dp"
+                android:text="@string/fragment_home_page_edit_profile"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayout_action"
+            android:layout_width="346dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="28dp"
+            android:columnCount="1"
+            android:rowCount="1"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+
+            app:layout_constraintTop_toBottomOf="@+id/list_name_uploaded_Items">
+
+            <Button
+                android:id="@+id/item_list_button_fragment_home"
+                android:layout_width="94dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="0.5"
+                android:text="@string/fragment_home_item_list_button" />
+
+            <Button
+                android:id="@+id/addWishList_fragment_home"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:text="Edit wish list" />
+
+            <Button
+                android:id="@+id/exchange_record_profile"
+                android:layout_width="209dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="@string/fragment_home_exchange_record" />
+
+
+
+        </GridLayout>
+
+
+        <TextView
+            android:id="@+id/list_name_wish_list_label"
+            android:layout_width="346dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Wish list"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileInformationLayout" />
+
+        <ListView
+            android:id="@+id/list_name_wish_list"
+            android:layout_width="346dp"
+            android:layout_height="162dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/list_name_wish_list_label" />
+
+        <TextView
+            android:id="@+id/list_name_uploaded_Items_label"
+            android:layout_width="346dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="4"
+            android:gravity="center_horizontal"
+            android:padding="10sp"
+            android:text="Items"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_name_wish_list" />
+
+        <ListView
+            android:id="@+id/list_name_uploaded_Items"
+            android:layout_width="343dp"
+            android:layout_height="269dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_name_uploaded_Items_label" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SerachExchange.GroupDetailSearchExchangeActivity">
+
+    <TextView
+        android:layout_width="225dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Group Information" />
+
+    <ListView
+        android:id="@+id/Group_information_view_group_details_SE"
+        android:layout_width="match_parent"
+        android:layout_height="406dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="44dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="2dp"
+        tools:listitem="@android:layout/simple_dropdown_item_1line" />
+
+    <Button
+        android:id="@+id/back_to_previous_detailedPage_SE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="490dp"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/submit_request_btn_SE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="490dp"
+        android:text="Submit Request" />
+
+</RelativeLayout>

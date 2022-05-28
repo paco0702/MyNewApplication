@@ -1,0 +1,151 @@
+
+plugins {
+    id 'com.android.application'
+    id 'com.chaquo.python'
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.android.application'
+apply plugin: 'com.chaquo.python'
+
+
+android {
+    compileSdkVersion 30
+    buildFeatures{
+        viewBinding true
+        mlModelBinding true
+    }
+
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.mynewapplication"
+
+        python{
+            pip{
+                install "firebase-admin"
+                install "numpy"
+                install "pandas"
+                install "matplotlib"
+
+            }
+        }
+
+
+        // give the source folder to python
+
+        sourceSets{
+         main{
+             python{
+               srcDirs = ["src/main/python"]
+             }
+           }
+         }
+
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+
+        python{
+            buildPython "C:/Users/Pacowawo Chiu/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Python 3.9/python.exe"
+        }
+
+        python {
+            buildPython "C:/Users/Pacowawo Chiu/AppData/Local/Programs/Python/Python39/python.exe"
+        }
+        sourceSets {
+            main {
+                python.srcDir "src/main/python" // create the folder for python script
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'com.firebaseui:firebase-ui-auth:6.4.0'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'androidx.navigation:navigation-fragment:2.3.3'
+    implementation 'androidx.navigation:navigation-ui:2.3.3'
+    implementation("androidx.multidex:multidex:2.0.1")
+    // import BoM for the firebase platform
+    implementation platform('com.google.firebase:firebase-bom:28.0.1')
+
+    // to read csv
+    implementation 'com.opencsv:opencsv:4.6'
+    
+    //material design
+    implementation 'com.google.firebase:firebase-database:19.7.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+
+    //tensorflow lite dependency
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-task-text:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-task-audio:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite:0.1.2-nightly'
+
+    implementation 'org.tensorflow:tensorflow-lite-support:0.1.0-rc1'
+    //implementation 'org.tensorflow:tensorflow-lite-gpu:2.2.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.0'
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite-task-text:0.0.0-nightly'
+    //new dependency
+    implementation 'org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.wear:wear:1.0.0'
+
+    
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    // nagivation bar meun aside
+    androidTestImplementation 'com.android.support.test:runner:'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:'
+
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // navigation bar design
+    implementation fileTree(dir: 'libs', includes:['*.jar'])
+    implementation 'com.android.support:appcompat-v7:'
+    implementation 'com.android.support:design:'
+    implementation 'com.android.support.constraint:constraint-layout'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:gridlayout-v7:28.0.0-rc02'
+    compileOnly 'com.google.android.wearable:wearable:2.6.0'
+
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+}

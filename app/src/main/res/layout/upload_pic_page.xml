@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+
+        <Button
+            android:id="@+id/uploadImage_button"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="Upload Item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_description" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="303dp"
+            android:layout_height="297dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="60dp"
+            android:background="#0F170303"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/uploadImage_View"
+                android:layout_width="134dp"
+                android:layout_height="161dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="162dp"
+                android:layout_marginRight="162dp"
+                android:background="#00F3F0F0" />
+
+            <ImageView
+                android:id="@+id/uploadImage_View_4"
+                android:layout_width="81dp"
+                android:layout_height="107dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="122dp"
+                android:layout_marginLeft="122dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp" />
+
+            <ImageView
+                android:id="@+id/uploadImage_View_2"
+                android:layout_width="124dp"
+                android:layout_height="158dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="161dp"
+                android:layout_marginLeft="161dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginRight="18dp" />
+
+            <ImageView
+                android:id="@+id/uploadImage_View_3"
+                android:layout_width="92dp"
+                android:layout_height="109dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="188dp"
+                android:layout_marginEnd="201dp"
+                android:layout_marginRight="201dp" />
+
+            <ImageView
+                android:id="@+id/uploadImage_View_5"
+                android:layout_width="72dp"
+                android:layout_height="105dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="217dp"
+                android:layout_marginLeft="217dp"
+                android:layout_marginTop="192dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp" />
+            " />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView_todoTest"
+            android:layout_width="143dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <EditText
+            android:id="@+id/enter_imageName"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="70dp"
+            android:background="#25050202"
+            android:backgroundTint="#20100909"
+            android:hint="Enter image name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView_todoTest"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/enter_imageValue"
+            android:layout_width="339dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1D231919"
+            android:hint="@string/upload_page_enter_image_value"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_imageName" />
+
+
+        <Button
+            android:id="@+id/back_indexPage_button"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="4dp"
+            android:text="Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_description" />
+
+        <Button
+            android:id="@+id/ChoosePicture_button"
+            android:layout_width="125dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="20dp"
+            android:text="Choose Picture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/classifyBtn"
+            android:layout_width="125dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:text="Finish Upload Pictures"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChoosePicture_button" />
+
+        <Button
+            android:id="@+id/reset_picture"
+            android:layout_width="125dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:text="reset picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChoosePicture_button" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_categories_classified"
+            android:layout_width="339dp"
+            android:layout_height="320dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="50dp"
+            android:background="#190C0909"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enter_imageValue"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <RadioButton
+                android:id="@+id/radioButton_classifed_userInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </RadioGroup>
+
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id ="@+id/progress_bar"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/uploadImage_button"></ProgressBar>
+
+
+        <EditText
+            android:id="@+id/item_description"
+            android:layout_width="339dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Item description"
+            android:inputType="textMultiLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup_categories_classified" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/status_list_layout_fragment"
+    tools:context=".FragmentClass.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="328dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="140dp"
+        android:text="" />
+
+    <ListView
+        android:id="@+id/exchange_event_view"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="190dp"
+        android:divider="@android:color/white"
+        android:dividerHeight="2dp"
+        tools:listitem="@android:layout/simple_dropdown_item_1line" />
+
+    <Button
+        android:id="@+id/exchange_history_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="49dp"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/exchange_pending_button"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="48dp"
+        android:text="Pending" />
+
+    <Button
+        android:id="@+id/exchange_processing_button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="48dp"
+        android:text="progressing" />
+
+
+</RelativeLayout>

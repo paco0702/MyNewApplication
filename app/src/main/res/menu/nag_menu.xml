@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single"> <!-- can select only one menu item at the time in the group-->
+        <item
+            android:id="@+id/nav_side_bar_view_status"
+            android:icon="@drawable/ic_view_status"
+            android:title="Transaction status"></item>
+        <item
+            android:id="@+id/nav_side_bar_message"
+            android:icon="@drawable/ic_message"
+            android:title="Messages"></item>
+
+        <item
+            android:id="@+id/nav_side_bar_exchange"
+            android:icon="@drawable/ic_exchange"
+            android:title="Exchange">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_side_bar_group"
+            android:icon="@drawable/ic_groups"
+            android:title="Group">
+
+        </item>
+        <item
+            android:id="@+id/nav_side_bar_search_exchange"
+            android:icon="@drawable/ic_search_exchange"
+            android:title="Search exchange">
+        </item>
+        <item
+            android:id="@+id/nav_side_bar_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout">
+
+        </item>
+    </group>
+</menu>

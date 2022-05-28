@@ -1,0 +1,208 @@
+<resources>
+    <string name="app_name">Items exchange app</string>
+    <string name="main_act_first_text"> Hello everyone</string>
+    <string name="main_act_sec_text"></string>
+    <string name="main_act_first_button"> Enter </string>
+    <string name="main_act_email_hint"> Email </string>
+    <string name="main_act_password_hint"> Password </string>
+    <string name="main_act_back_home_btn_text"> Home Page </string>
+
+    <string name="main_act_register_button"> register </string>
+    <string name="chat_main_sendMsg_button">Send Message</string>
+    <string name="chat_main_start_server_button">Start server</string>
+    <string name="chat_main_msg_from_server">Message from server</string>
+    /*<string name="title_activity_register">Register</string>-*+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- register page-->
+
+    <string name="register_page_title">Items Exchanges App</string>
+    <string name="register_page_title_sec"> Create New Account</string>
+    <string name="register_page_user_givenname"> Given name </string>
+    <string name="register_page_user_surname"> Surname</string>
+    <string name="register_page_user_phoneNum"> Phone Number</string>
+    <string name="register_page_user_birthday"> Birthday </string>
+    <string name="register_page_birthday_pickDate_button"> Pick a Date </string>
+    <string name="register_page_user_email_input"> Email address: </string>
+    <string name="register_page_user_password_input"> New Password: </string>
+    <string name="register_page_user_confirm_password"> Confirm password: </string>
+    <string name="register_page_input_information_button"> Register </string>
+    <string name="register_page_back_button"> Back</string>
+    <string name="register_page_next_button"> Next</string>
+    <string name="register_page_message_from_button"></string>
+    <string name="register_information_page_message_from_button"></string>
+    <string name="register_information_page_firstName">your firstname</string>
+    <string name="register_information_page_surname">your surname </string>
+    <string name="register_information_page_picked_birthday"></string>
+
+    <!-- Home page -->
+    <string name="home_page_welcome"> Welcome </string>
+    <string name="home_page_welcome_sec"> To</string>
+    <string name="home_page_start_button"> Lets get started </string>
+
+    <!-- Index page -->
+    <string name="index_page_user_Information"> Main Page</string>
+    <string name="index_page_popular_items_view_text"> List of popular items </string>
+    <string name="index_page_recommend_items_view_text"> List of items you might like </string>
+    <string name="index_page_enter_full_list_items_page_Button"> View full list</string>
+    <string name="index_page_enter_full_list_recommend_items_Button">View all recommend items</string>
+    <string name="index_page_display_user_name"> </string>
+    <string name="index_page_navigation_drawer_open">Open navigation drawer</string>
+    <string name="index_page_navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Dialog alert miss name -->
+    <string name="dialog_miss_nameOfItem_message_for_uploadPicturesPage"> Please Enter the name of the Item </string>
+    <string name="dialog_miss_valueOfItem_message_for_uploadPicturesPage"> Please Enter the value of the Item </string>
+    <string name="dialog_miss_categoriesOfItem_message_for_uploadPicturesPage"> Please Choose the category for the item </string>
+    <string name="dialog_miss_nameOfItem_message_for_uploadPicturesPage_title"> Error Message </string>
+    <string name="dialog_miss_nameOfItem_message_for_uploadPicturesPage_positiveButton"> Okay </string>
+
+    <!-- Upload page -->
+    <string name="upload_page_enter_image_value"> enter value of the item</string>
+    <string name="upload_page_enter_image_name"> enter name of the items</string>
+    <string name="upload_page_categories_Fashion"> Fashion </string>
+    <string name="upload_page_categories_Daily_product"> Daily essentials </string>
+    <string name="upload_page_categories_Furniture"> Baby items </string>
+    <string name="upload_page_categories_Stationery"> Stationery </string>
+    <string name="upload_page_categories_ElectricalProducts"> Electrical Product </string>
+    <string name="upload_page_categories_Instruments"> Instruments </string>\
+    <string name="upload_page_categories_Accessary"> Accessories</string>
+    <string name="upload_page_categories_Sport_Items"> Sport items</string>
+    <string name="upload_page_categories_Transport"> Transport</string>
+    <string name="upload_page_categories_others"> Others </string>
+    <string name="upload_page_prediction_buton"> classify</string>
+
+    <!-- itemsPool page-->
+    <string-array name="categories">
+        <item>Accessory</item>
+        <item>Sport item</item>
+        <item>Instrument</item>
+        <item>Fashion</item>
+        <item>Electronic product</item>
+        <item>Stationery</item>
+        <item>Furniture</item>
+        <item>Daily product</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="exchange_fragment"></string>
+
+    <!-- fragment homepage string value -->
+    <string name="fragment_home_page_edit_profile"> Edit profile </string>
+    <string name="fragment_home_item_list_button"> Items list </string>
+    <string name="fragment_home_exchange_record"> Exchange Record </string>
+    <string name="fragment_home_addToWishList"> Stored Items </string>
+    <string name="fragment_home_friendList"> Friends List </string>
+    <string name="fragment_home_upload_items"> Upload Items </string>
+    <string name="fragment_home_user_name">  </string>
+    <string name="title_activity_list_item">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_show_item">ShowItemActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_show_item_detail">showItemDetailActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
